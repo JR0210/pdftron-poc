@@ -2,6 +2,7 @@ const { PDFNet } = require("@pdftron/pdfnet-node");
 
 // Errors on call:
 // Module not found: Can't resolve './addon' in 'D:\Work\apryse-13-test\node_modules\@pdftron\pdfnet-node\lib'
+// Works in Next 12/pages router
 
 async function savePDFDocToBuffer(pdfDoc, PDFNet) {
   const pdfBuffer = await pdfDoc.saveMemoryBuffer(
